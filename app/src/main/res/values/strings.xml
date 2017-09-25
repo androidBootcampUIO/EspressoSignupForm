@@ -3,4 +3,5 @@
     <string name="name">Nombre</string>
     <string name="lastname">Apellido</string>
     <string name="signupForm">Formulario de inscripción</string>
+    <string name="email" >Email</string>
 </resources>
