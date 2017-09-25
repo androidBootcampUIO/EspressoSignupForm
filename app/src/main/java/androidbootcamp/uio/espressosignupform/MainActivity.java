@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -54,4 +55,14 @@ public class MainActivity extends Activity {
     }
 
 
+    public void register(View view) {
+        EditText nameEditText = findViewById(R.id.editText_name);
+        String name = nameEditText.getText().toString().trim();
+        EditText lastnameEditText = findViewById(R.id.editText_lastname);
+        String lastname = lastnameEditText.getText().toString().trim();
+
+        String greeting = getString(R.string.greeting) + ": " + name + " " + lastname;
+
+        Toast.makeText(this, greeting, Toast.LENGTH_LONG).show();
+    }
 }

@@ -5,4 +5,6 @@
     <string name="signupForm">Formulario de inscripción</string>
     <string name="email" >Email</string>
     <string name="birthday">Fecha Nac.</string>
+    <string name="register">Registrar</string>
+    <string name="greeting">Hola</string>
 </resources>
