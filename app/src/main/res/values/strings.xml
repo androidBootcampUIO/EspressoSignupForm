@@ -4,4 +4,5 @@
     <string name="lastname">Apellido</string>
     <string name="signupForm">Formulario de inscripción</string>
     <string name="email" >Email</string>
+    <string name="birthday">Fecha Nac.</string>
 </resources>
