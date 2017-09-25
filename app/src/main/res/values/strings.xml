@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">EspressoSignupForm</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="signupForm">Formulario de inscripción</string>
 </resources>
