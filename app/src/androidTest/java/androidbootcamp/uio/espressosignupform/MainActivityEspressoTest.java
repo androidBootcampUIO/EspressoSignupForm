@@ -21,7 +21,8 @@ public class MainActivityEspressoTest {
     public ActivityTestRule<MainActivity> mainActivityRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void displaysHelloWorld() throws Exception {
-        onView(withText("Hello World!")).check(matches(isDisplayed()));
+    public void displaysTitle() throws Exception {
+        String title = "Formulario de inscripción";
+        onView(withText(title)).check(matches(isDisplayed()));
     }
 }
