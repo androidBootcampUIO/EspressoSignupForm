@@ -33,13 +33,14 @@ public class MainActivity extends Activity {
             }
         };
 
-        calendarEditText.setOnClickListener(new View.OnClickListener() {
+        calendarEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void onClick(View view) {
-                new DatePickerDialog(MainActivity.this, datePicker, calendar.get(Calendar.YEAR),
-                        calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH))
-                        .show();
-
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    new DatePickerDialog(MainActivity.this, datePicker, calendar.get(Calendar.YEAR),
+                            calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH))
+                            .show();
+                }
             }
         });
 
